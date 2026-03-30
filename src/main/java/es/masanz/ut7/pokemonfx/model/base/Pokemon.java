@@ -50,17 +50,6 @@ public abstract class Pokemon {
         asignarAtaques();
     }
 
-    public Pokemon(int hpIV, int ataqueIV, int defensaIV, int velocidadIV, int ataqueEspecialIV, int defensaEspecialIV) {
-
-        this.hpIV = hpIV;
-        this.ataqueIV = ataqueIV;
-        this.defensaIV = defensaIV;
-        this.velocidadIV = velocidadIV;
-        this.ataqueEspecialIV = ataqueEspecialIV;
-        this.defensaEspecialIV = defensaEspecialIV;
-
-    }
-
     protected abstract void asignarAtaques();
 
     public abstract int nivelEvolucion();
@@ -203,15 +192,4 @@ public abstract class Pokemon {
     }
 
     // TODO 01: Implementar clone. El clonado deberá generar un pokemon con nuevos IV.
-
-    public void regenerarIVs(){ // hay que implementarlo
-
-    }
-
-
-    @Override
-    protected Object clone(){
-        //regegerarIVs();
-        return null;
-    }
 }

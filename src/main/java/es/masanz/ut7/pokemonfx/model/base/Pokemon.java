@@ -191,5 +191,28 @@ public abstract class Pokemon {
         return puntosExp;
     }
 
-    // TODO 01: Implementar clone. El clonado deberá generar un pokemon con nuevos IV.
+    // TODO 01: Implementar clone. El clonado deberá generar un pokemon con nuevos IV. - DONE
+
+    public static void regenerarIVs(Pokemon pokemon) {
+        pokemon.hpIV = (int) (Math.random() * 32);
+        pokemon.ataqueIV = (int) (Math.random() * 32);
+        pokemon.defensaIV = (int) (Math.random() * 32);
+        pokemon.velocidadIV = (int) (Math.random() * 32);
+        pokemon.ataqueEspecialIV = (int) (Math.random() * 32);
+        pokemon.defensaEspecialIV = (int) (Math.random() * 32);
+    }
+
+    @Override
+    public Pokemon clone() {
+        Pokemon clon = this.pokemonAEvolucionar();
+
+        clon.nivel = this.nivel;
+        clon.puntosExp = this.puntosExp;
+        clon.apodo = this.apodo;
+
+        regenerarIVs(clon);
+
+        return clon;
+    }
+
 }

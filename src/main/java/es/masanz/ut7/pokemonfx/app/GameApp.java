@@ -1,10 +1,8 @@
 package es.masanz.ut7.pokemonfx.app;
 
 import es.masanz.ut7.pokemonfx.controller.MapController;
-import es.masanz.ut7.pokemonfx.model.pokemons.Bulbasaur;
-import es.masanz.ut7.pokemonfx.model.pokemons.Charmander;
+import es.masanz.ut7.pokemonfx.model.pokemons.*;
 import es.masanz.ut7.pokemonfx.model.base.Entrenador;
-import es.masanz.ut7.pokemonfx.model.pokemons.Squirtle;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -22,8 +20,8 @@ public class GameApp extends Application {
     public static void main(String[] args) {
         // TODO 00: AQUI DEFINIR VUESTRO ENTRENADOR INICIAL
         jugador = new Entrenador();
-        jugador.incluirPokemonParaCombatir(0, new Bulbasaur(5));
-        jugador.incluirPokemonParaCombatir(1, new Charmander(6));
+        jugador.incluirPokemonParaCombatir(0, new Charmeleon(5));
+        jugador.incluirPokemonParaCombatir(1, new Charizard(6));
         jugador.incluirPokemonParaCombatir(2, new Squirtle(7));
         jugador.incluirPokemonParaCombatir(3, new Squirtle(8));
         jugador.incluirPokemonParaCombatir(4, new Charmander(9));

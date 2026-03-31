@@ -5,7 +5,10 @@ public enum Stats {
     // TODO 08: Incluir nuevos pokemon. Cuidado, el nombre correcto es muy IMPORTANTE
     BULBASAUR("001", 45, 49, 49, 45, 65, 65, 64),
     CHARMANDER("004", 39, 52, 43, 65, 60, 50, 65),
-    SQUIRTLE("007", 44, 48, 65, 43, 50, 64, 66);
+    SQUIRTLE("007", 44, 48, 65, 43, 50, 64, 66),
+    // MIS POKEMONS
+    CHARMELEON("005", 80, 80, 50,75, 98,65,70),
+    CHARIZARD("006", 120, 100, 80,65, 150,85,90);
 
     public final String numPokedex;
     public final int hp, ataque, defensa, velocidad, ataqueEspecial, defensaEspecial, expBase;

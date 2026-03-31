@@ -5,9 +5,9 @@ import es.masanz.ut7.pokemonfx.model.base.Pokemon;
 import es.masanz.ut7.pokemonfx.model.enums.Tipo;
 import es.masanz.ut7.pokemonfx.model.type.Fuego;
 
-public class Charmander extends Pokemon implements Fuego {
+public class Charizard extends Pokemon implements Fuego {
 
-    public Charmander(int nivel) {
+    public Charizard(int nivel) {
         super(nivel);
     }
 
@@ -18,7 +18,7 @@ public class Charmander extends Pokemon implements Fuego {
 
     @Override
     public Pokemon pokemonAEvolucionar() {
-        Pokemon pokemon = new Charmeleon(this.nivel);
+        Pokemon pokemon = new Charmander(this.nivel);
         return pokemon;
     }
 
@@ -38,5 +38,4 @@ public class Charmander extends Pokemon implements Fuego {
         asignarAtaque(cuchillada.getNombre(), cuchillada);
 */
     }
-
 }

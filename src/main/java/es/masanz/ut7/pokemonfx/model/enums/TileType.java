@@ -20,6 +20,7 @@ public enum TileType {
     MONTE_ESQUINA_SUPERIOR_DERECHA("/pruebas/monte_esquina_superior_derecha.png"),
     MONTE_ESQUINA_INFERIOR_IZQUIERDA("/pruebas/monte_esquina_inferior_izquierda.png"),
     MONTE_ESQUINA_INFERIOR_DERECHA("/pruebas/monte_esquina_inferior_derecha.png"),
+    ARBOL("/pruebas/arbol.png"),
     TELEPORT_RED("/pruebas/teleport_red.png");
 
     public final Image imagen;

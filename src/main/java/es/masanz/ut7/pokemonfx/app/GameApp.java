@@ -1,6 +1,7 @@
 package es.masanz.ut7.pokemonfx.app;
 
 import es.masanz.ut7.pokemonfx.controller.MapController;
+import es.masanz.ut7.pokemonfx.manager.MapManager;
 import es.masanz.ut7.pokemonfx.model.pokemons.*;
 import es.masanz.ut7.pokemonfx.model.base.Entrenador;
 import javafx.application.Application;
@@ -14,6 +15,7 @@ public class GameApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        MapManager.cargarRuta("Ruta 3");
         MapController.load(primaryStage);
     }
 
